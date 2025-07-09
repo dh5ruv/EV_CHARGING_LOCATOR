@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #0a3d62;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.search-bar {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+}
+
+.info-panel {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 220px;
+}
+
+.info-panel h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.battery-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.leaflet-marker-icon.bike {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3448/3448334.png');
+  background-size: cover;
+  width: 40px !important;
+  height: 40px !important;
+  border: none;
+}
+

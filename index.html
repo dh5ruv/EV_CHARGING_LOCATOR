@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Charging Station Locator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    🌌 EV Charging Station Locator - Inspired by Ola Electric
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search city or area..." />
+    <button onclick="searchCity()">Search</button>
+  </div>
+
+  <div class="info-panel" id="infoPanel">
+    <h3>👤 Your Info</h3>
+    <p id="locationInfo">Locating...</p>
+    <p class="battery-status" id="batteryStatus">Battery: Detecting...</p>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
