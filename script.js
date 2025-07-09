@@ -21,7 +21,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
 }
 
 async function fetchStationsFromAPI(lat, lng) {
-  const url = `https://api.openchargemap.io/v3/poi/?output=json&latitude=${lat}&longitude=${lng}&distance=25&maxresults=20&key=OCM-API-TEST`;
+  const url = `https://api.openchargemap.io/v3/poi/?output=json&latitude=${lat}&longitude=${lng}&distance=25&maxresults=20&key=d6447f59-d8b2-4fa3-9c37-b2d11eb4fa52`;
 
   const response = await fetch(url, {
     method: "GET",
